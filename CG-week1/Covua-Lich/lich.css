@@ -1,0 +1,21 @@
+table{
+    margin-left: 140px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 500px;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+}
+
+#container td{
+    color: white;
+    background-color: orange;
+    border: 1px solid darkgrey;
+}
+.container1 td{
+    border: 1px solid darkgrey;
+}
