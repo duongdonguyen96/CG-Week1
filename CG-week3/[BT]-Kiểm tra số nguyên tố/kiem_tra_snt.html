@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i;
+      let number;
+      function kiemtra_snt(number) {
+        check = true;
+        if (number < 2) {
+          check = false;
+        } else {
+          for (i = 2; i < number - 1; i++) {
+            if (number % i == 0) {
+              check = false;
+              break;
+            }
+          }
+        }
+        return check;
+      }
+      let primeNumber = Number(prompt("Nhập số vào"));
+      kiemtra_snt(primeNumber);
+      if (check == true) {
+        document.write(primeNumber + " là số nguyên tố");
+      } else {
+        document.write(primeNumber + " không phải là số nguyên tố");
+      }
+    </script>
+  </body>
+</html>

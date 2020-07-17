@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" name="myform" >
+      <h2>feet to meters</h2>
+      <div>
+        <input type="text" id="input1" name="name1" />
+        <input type="button" onclick="validate()" value="convert" /> <br />
+    </form>
+        <span id="num1"></span>
+      </div>
+      <hr />
+      <h2>meters to feet</h2>
+      <div>
+    <form>
+        <input type="number" id="input2" name=" name2" />
+        <input type="button" value="convert" onclick="convert2()" /><br>
+        
+        <span id="num2"></span>
+      </div>
+    </form>
+    <script>
+      function convert2() {
+        let meter = document.getElementById("input2").value;
+
+        let feet = 3.279 * meter;
+        document.getElementById("num2").innerHTML = feet;
+      }
+      function validate() {
+        
+        let feet =+document.getElementById('input1').value;
+        
+        if (!Number.isInteger(feet)) {
+          document.getElementById("num1").innerHTML = "Dùng số đi bạn ơi";
+          return false;
+        } else {
+          
+          let meter = 0.305 * feet; 
+          console.log(meter);
+          document.getElementById("num1").innerHTML =meter;
+          return false;
+        }
+      }
+      
+    </script>
+  </body>
+</html>

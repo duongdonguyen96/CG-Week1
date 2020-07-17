@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let money;
+      money = Number(prompt("thuế/năm (triệu đồng)"));
+      if (money <= 60) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.05);
+      } else if (money > 60 && money <= 120) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.1);
+      } else if (money > 120 && money <= 216) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.15);
+      } else if (money > 216 && money <= 384) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.2);
+      } else if (money > 384 && money <= 624) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.25);
+      } else if (money > 624 && money <= 960) {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.3);
+      } else {
+        document.write("Thuế/năm (triệu đồng): " + money * 0.35);
+      }
+    </script>
+  </body>
+</html>

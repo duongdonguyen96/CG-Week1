@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="gamepuzle.css" />
+  </head>
+  <body>
+    <div id="tren" onclick="anhtren()">
+      <img id="anh11" src="./css1.png" alt="1.1" height="200" width="600" />
+      <img id="anh21" src="./java1.png" alt="2.1" height="200" width="600" />
+      <img id="anh31" src="./js1.png" alt="3.1" height="200" width="600" />
+    </div>
+    <div id="giua" onclick="anhgiua()">
+      <img
+        id="anh12"
+        src="./css2.png"
+        alt="2.1"
+        height="200"
+        width="600"
+      /><br />
+      <img
+        id="anh22"
+        src="./java2.png"
+        alt="2.2"
+        height="200"
+        width="600"
+      /><br />
+      <img
+        id="anh32"
+        src="./js2.png"
+        alt="2.3"
+        height="200"
+        width="600"
+      /><br />
+    </div>
+    <div id="duoi" onclick="anhduoi()">
+      <img
+        id="anh13"
+        src="./css3.png"
+        alt="3.1"
+        height="200"
+        width="600"
+      /><br />
+      <img
+        id="anh23"
+        src="./java3.png"
+        alt="3.2"
+        height="200"
+        width="600"
+      /><br />
+      <img id="anh33" src="./Js3.png" alt="3.3" height="200" width="600" />
+    </div>
+    <script>
+      function anhtren() {
+        let number;
+
+        number = Math.floor(Math.random() * (3 - 1 + 1));
+        switch (number) {
+          case 1:
+            document.getElementById("tren").src = "./css1.png";
+            break;
+          case 2:
+            document.getElementById("tren").src = "./java1.png";
+            break;
+          case 3:
+            document.getElementById("tren").src = "./js1.png";
+            break;
+        }
+      }
+      function anhduoi() {
+        let number;
+
+        number = Math.floor(Math.random() * (3 - 1 + 1));
+        switch (number) {
+          case 1:
+            document.getElementById("tren").src = "./css1.png";
+            break;
+          case 2:
+            document.getElementById("tren").src = "./java1.png";
+            break;
+          case 3:
+            document.getElementById("tren").src = "./js1.png";
+            break;
+        }
+      }
+      function aanhgiua() {
+        let number;
+
+        number = Math.floor(Math.random() * (3 - 1 + 1));
+        switch (number) {
+          case 1:
+            document.getElementById("tren").src = "./css1.png";
+            break;
+          case 2:
+            document.getElementById("tren").src = "./java1.png";
+            break;
+          case 3:
+            document.getElementById("tren").src = "./js1.png";
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>

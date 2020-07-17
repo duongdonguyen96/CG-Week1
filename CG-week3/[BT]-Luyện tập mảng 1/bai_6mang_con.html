@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array2 = [2, 2, 3, 6, 4, 5];
+      let array1 = [1, 2, 3, 4, 5];
+
+      let i, j;
+      let count = 0;
+      check = false;
+      for (j = 0; j < array2.length; j++) {
+        for (i = 0; i < array1.length; i++) {
+          if (array1[i] == array2[j]) {
+            check = true;
+            break;
+          } else check = false;
+        }
+        if (check == false) break;
+      }
+
+      if (check == true) {
+        document.write("Array2 in Array1");
+      } else {
+        document.write("Array 2 is not in Array1");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //  Bán được 10 - 19: hoa hồng là 1
+      //  bán được 20 - 50: hoa hồng là 2
+      //  bán được >50 : hoa hồng là 5
+      //  bán được < 10: hoa hồng là 0
+      let money = Number(prompt("Nhập số tiền bán được"));
+      if (money >= 10 && money < 20) {
+        document.write("hoa hồng là 1");
+      } else if (money >= 20 && money < 50) {
+        document.write(" Hoa hồng là 2");
+      } else if (money > 50) {
+        document.write(" Hoa hồng là 5");
+      } else {
+        document.write(" không có hoa hồng nha");
+      }
+    </script>
+  </body>
+</html>

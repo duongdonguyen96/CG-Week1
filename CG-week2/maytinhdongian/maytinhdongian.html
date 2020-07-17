@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">Máy tính casio</h1>
+    <form>
+      <table border="1" style="height: 200;width: auto; background-color:black;    margin-left: 680px;" >
+        <tr>
+          <td colspan="4"><input type="text" id="output" /></td>    
+        </tr>
+        <tr>
+          <td>
+            <input value="1" type="button" id="mot1" onclick="mot()"></input>
+          </td>
+          <td>
+            <input value="2" type="button" id="hai2" onclick="hai()"></input>
+          </td>
+          <td>
+            <input value="3" type="button" id="ba3" onclick="ba()"></input>
+          </td>
+          <td>
+            <input value="+" type="button" id="congcong" onclick="cong()"></input>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input value="4" type="button" id="bon4" onclick="bon()"></input>
+          </td>
+          <td>
+            <input value="5" type="button" id="nam5" onclick="nam()"></input>
+          </td>
+          <td>
+            <input value="6" type="button" id="sau6" onclick="sau()"></input>
+          </td>
+          <td>
+            <input value="-" type="button" id="trutru" onclick="tru()"></input>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input value="7" type="button" id="bay7" onclick="bay()"> </input>
+          </td>
+          <td>
+            <input value="8" type="button" id="tam8"onclick ="tam()"></input>
+          </td>
+          <td>
+            <input value="9" type="button" id="chin9"onclick="chin()"></input>
+          </td>
+          <td>
+            <input value="*" type="button" id="nhannhan" onclick="nhan()"></input>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <input value="C" type="button" id="xoaxoa" onclick="xoa()"></input>
+          </td>
+          <td>
+            <input value="0" type="button" id="khong0" onclick="khong()"></input>
+          </td>
+          <td>
+            <input value="=" type="button" id="bang=" onclick="bang()"></input>
+          </td>
+          <td>
+            <input value="/" type="button" id="chiachia" onclick="chia()"></input>
+          </td>
+        </tr>
+        </table>
+      </form>
+      <script>
+        function cong() {
+          let cong = document.getElementById("output").value+="+";
+        } 
+        function tru() {
+          let tru = document.getElementById("output").value+="-";
+        } 
+        function nhan() {
+          let nhan = document.getElementById("output").value+="*";
+        } 
+        function chia() {
+          let chia = document.getElementById("output").value+="/";
+        } 
+        function mot() {
+          let mot = document.getElementById("output").value+="1";
+        } 
+        function hai() {
+          let hai = document.getElementById("output").value+="2";
+        } 
+        function ba() {
+          let ba = document.getElementById("output").value+="3";
+        } 
+        function bon() {
+          let bon = document.getElementById("output").value+="4";
+        } 
+        function nam() {
+          let nam = document.getElementById("output").value+="5";
+        } 
+        function sau() {
+          let sau = document.getElementById("output").value+="6";
+        } 
+        function bay() {
+          let bay = document.getElementById("output").value+="7";
+        } 
+        function khong() {
+          let khong = document.getElementById("output").value+="0";
+        } 
+        function xoa() {
+          let xoa = document.getElementById("output").value="";
+        } 
+        function chin() {
+          let chin = document.getElementById("output").value+="9";
+        } 
+        function tam() {
+          let chin = document.getElementById("output").value+="8";
+        } 
+       
+        function bang() {
+          bang = document.getElementById("output").value;
+          x = eval(bang);
+          document.getElementById("output").value = x;
+        }
+      </script>
+  </body>
+</html>

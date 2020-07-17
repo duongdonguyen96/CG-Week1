@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <h1>Chuyển đổi nhiệt độ</h1>
+      <input
+        type="number"
+        id="input"
+        oninput="temperatureConverter(this.value)"
+      />
+      <hr />
+      <span>Celcius:</span><span id="output"></span>
+    </form>
+    <script>
+      function temperatureConverter(valNum) {
+        document.getElementById("output").innerHTML = (valNum - 32) / 1.8;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      let first;
+      let last;
+      let array = [5, 2, 6, 1, 7, 6, 5];
+      let b;
+      first = 0;
+      last = array.length - 1;
+
+      while (first < last) {
+        b = array[first];
+        array[first] = array[last];
+        array[last] = b;
+        first++;
+        last--;
+      }
+
+      document.write(array);
+    </script>
+  </body>
+</html>

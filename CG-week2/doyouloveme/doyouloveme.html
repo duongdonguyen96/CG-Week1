@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do you love me?</h1>
+    <h1 id="reply"></h1>
+    <form action="#">
+        <span><input type="button" value="Yes" onclick="yes();"></span><span><input type="button" value="No" onmouseover="no();" id="nonolove" style="position: absolute;left: auto; top: auto; height: 23px;width: 40px;"></span>
+    </form>
+    <script>
+        function yes() {
+            document.getElementById("reply").innerHTML="Ahihi tao đéo thích mày"
+
+        }
+        function no() {
+            let height=window.innerHeight;
+            let width=window.innerWidth;
+            let changeheight=Math.random()*(height-60);
+            let changewidth=Math.random()*(width-50);
+           document.getElementById("nonolove").style.top=changeheight + "px";
+           document.getElementById("nonolove").style.left=changewidth + "px";
+           
+        }
+
+    </script>
+</body>
+</html>

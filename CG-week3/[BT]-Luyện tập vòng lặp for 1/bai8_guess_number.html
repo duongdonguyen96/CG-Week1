@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Game đoán số</h1>
+    <input type="button" value="Play" onclick="getNumber()" />
+    <script>
+      function getNumber() {
+        let a = Number(prompt("Nhập số a"));
+        let b = Number(prompt("Nhập số b"));
+        let number;
+        number = Math.round(Math.random() * (a - b) + b);
+        let c = Number(prompt("Nhập số c"));
+        while (c !== number) {
+          if (c == number) {
+            alert("Chúc mừng bạn, game kết thúc");
+          } else if (c > number) {
+            alert(" số c lớn hơn rồi");
+            c = Number(prompt("Nhập số c"));
+          } else {
+            alert(" SỐ c bé hơn rồi");
+            c = Number(prompt("Nhập số c"));
+          }
+        }
+        alert("Chúc mừng bạn, game kết thúc");
+      }
+    </script>
+  </body>
+</html>

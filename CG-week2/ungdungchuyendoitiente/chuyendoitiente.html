@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="number" id="inputNumber" />
+    <select id="hello">
+      <option value="VietNam">VietNam</option>
+      <option value="USA">USA</option>
+    </select>
+    <select id="goodbye">
+      <option value="VietNam">VietNam</option>
+      <option value="USA">USA</option>
+    </select>
+    <button type="button" onclick="convert()">Convert</button><br />
+    <h4>Result :</h4>
+    <p id="output"></p>
+
+    <script>
+      function convert() {
+        let inputmonney = document.getElementById("inputNumber").value;
+        let before;
+        let after;
+        before = document.getElementById("hello").value;
+        after = document.getElementById("goodbye").value;
+
+        let outputmoney;
+        if (before == "VietNam" && after == "VietNam") {
+          outputmoney = inputmonney;
+        } else if (before == "USA" && after == "USA") {
+          outputmoney = inputmonney;
+        } else if (before == "VietNam" && after == "USA") {
+          outputmoney = inputmonney / 22000;
+        } else {
+          outputmoney = inputmonney * 22000;
+        }
+        document.getElementById("output").innerHTML = outputmoney;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<HTML>
+    <HEAD> </HEAD>
+    <BODY>
+        <script language = "JavaScript">
+            // Khai báo 3 biến để lưu khối lượng, chiều cao, chỉ số cân nặng
+            let kg,m,bmi;
+            kg = prompt("Bạn hãy nhập vào cân nặng:", '65');
+            m = prompt("Bạn hãy nhập vào chiều cao:", '2.4');
+            bmi=kg/(m*m);
+            if (bmi < 18)
+                document.write("Underweight");
+            else if (bmi < 25.0)
+                document.write("Normal");
+            else if (bmi < 30.0)
+                document.write("Overweight");
+            else
+                document.write("Obese");
+        </script>
+    </BODY>
+</HTML> 

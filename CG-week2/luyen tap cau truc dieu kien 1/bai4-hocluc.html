@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=S, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let kiemtra = parseFloat(prompt("Nhập điểm kiểm tra"));
+      let giuaky = parseFloat(prompt("Nhập điểm giữa kỳ"));
+      let cuoiky = parseFloat(prompt("Nhập điểm cuối kỳ"));
+      let tong;
+      tong = (kiemtra + giuaky * 2 + cuoiky * 3) / 6;
+      if (tong >= 8 && tong <= 10) {
+        document.write("Học lực giỏi và điểm tổng", tong);
+      } else if (tong >= 6.5 && tong < 8) {
+        document.write(" Khá thôi, điểm tổng là: ", tong);
+      } else if (tong > 10) {
+        document.write("nhà mày buôn điểm à ?");
+      } else {
+        document.write("Kém quá, điểm tổng là: ", tong);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự trong
+    mảng là (-) và thay thế các ký tự này bởi ký tự ( _ ) -->
+    <script>
+      let character = ["t", "u", "-", "r", "i", "-"];
+      let i;
+      for (i = 0; i < character.length; i++) {
+        if (character[i] == "-") {
+          character[i] = "_";
+        }
+      }
+      document.write(character);
+    </script>
+  </body>
+</html>

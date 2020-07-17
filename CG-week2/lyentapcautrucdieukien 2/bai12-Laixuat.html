@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1 năm      1%
+      // 2 năm      2%
+      // 3 năm	    3%
+      // 4 tnăm	    4%
+      // 5 tnăm	    5%
+      // >5 năm     10%
+      let money, year;
+      money = Number(prompt("Số tiền mượn (triệu đồng)"));
+      year = Number(prompt(" Nhập số năm để trả hết lãi mẹ, lãi con,tiền gốc"));
+
+      if (year === 1) {
+        document.write("lãi xuất: " + money * 0.01 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.01);
+      } else if (year === 2) {
+        document.write("lãi xuất: " + money * 0.02 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.02);
+      } else if (year === 3) {
+        document.write("lãi xuất: " + money * 0.03 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.03);
+      } else if (year === 4) {
+        document.write("lãi xuất: " + money * 0.04 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.04);
+      } else if (year === 5) {
+        document.write("lãi xuất: " + money * 0.05 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.05);
+      } else if (year > 5) {
+        document.write("lãi xuất: " + money * 0.1 + "<br>");
+        document.write("Tổng tiền phải trả: " + money + money * 0.1);
+      }
+    </script>
+  </body>
+</html>

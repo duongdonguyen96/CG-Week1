@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <script>
+          function checkNumber(x) {
+            check = true;
+            if (x < 0) {
+              check = false;
+            }
+            return check;
+          }
+          let number = parseInt(prompt("Nhập 1 số"));
+          checkNumber(number);
+          {
+            if (check) {
+              document.write(number + " là số nguyên dương");
+            } else {
+              document.write(number + " không là số nguyên dương");
+            }
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- khi load man hình thì vào hàn docReady -->
+  <body onload="docReady()">
+    <img
+      src="ball.png"
+      alt="hình trái bóng"
+      id="nguyen"
+      style="position: relative; left: 0; top: 0;"
+    />
+    <script>
+      // tạo Onkeydow="moveselection()"... lắng nghe sự kiện
+      function docReady() {
+        window.addEventListener("keydown", moveSelection);
+
+        function moveSelection(evt) {
+          switch (evt.keyCode) {
+            case 37:
+              Left();
+              break;
+            case 39:
+              Right();
+              break;
+            case 38:
+              Up();
+              break;
+            case 40:
+              Down();
+              break;
+          }
+        }
+        function Up() {
+          let ball = document.getElementById("nguyen");
+          ball.style.top = parseInt(ball.style.top) - 10 + "px";
+        }
+        function Down() {
+          let ball = document.getElementById("nguyen");
+          ball.style.top = parseInt(ball.style.top) + 10 + "px";
+        }
+        function Left() {
+          let ball = document.getElementById("nguyen");
+          ball.style.left = parseInt(ball.style.left) - 10 + "px";
+        }
+        function Right() {
+          let ball = document.getElementById("nguyen");
+          ball.style.left = parseInt(ball.style.left) + 10 + "px";
+        }
+      }
+    </script>
+  </body>
+</html>

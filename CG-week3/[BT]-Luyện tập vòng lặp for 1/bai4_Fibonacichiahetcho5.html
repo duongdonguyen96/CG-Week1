@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i;
+      let fibonacci_array = [
+        0,
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233,
+        377,
+        610,
+        987,
+        1597,
+        2584,
+        4181,
+      ];
+      for (i = 0; i < fibonacci_array.length; i++) {
+        if (fibonacci_array[i] % 5 == 0) {
+          document.write(
+            " số đầu tiên chia hết cho 5 là: " + fibonacci_array[i]
+          );
+          break;
+        }
+      }
+    </script>
+  </body>
+</html>

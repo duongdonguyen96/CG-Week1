@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array1 = [
+        "Polaris",
+        "Aldebaran",
+        "Deneb",
+        "Vega",
+        "Altair",
+        "Dubhe",
+        "Regulus",
+      ];
+      let array2 = [
+        "Ursa Minor",
+        "Tarurus",
+        "Cygnus",
+        "Lyra",
+        "Aquila",
+        "Ursa Major",
+        "Leo",
+      ];
+
+      let star = prompt("Plese write your star");
+      getStar(star);
+      {
+        if (check == false) {
+          alert("None of your star");
+        }
+      }
+
+      function getStar(x) {
+        let i;
+        let j;
+        check = false;
+        for (i = 0; i < array1.length; i++) {
+          if (star == array1[i]) {
+            check = true;
+            alert(array2[i]);
+            break;
+          }
+        }
+        return check;
+      }
+    </script>
+  </body>
+</html>

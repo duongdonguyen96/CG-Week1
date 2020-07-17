@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 1 giây - 10 giâylà 2 đòng/s
+      // 11 giây - 19 giây: là 2.5 đồng/1s
+      // trên 20 giây: là 3 đồng/1s
+      let giay = Number(prompt(" Nhập thời gian  gọi vào nào"));
+      if (giay >= 1 && giay < 10) {
+        document.write("Tổng chi phí là: " + giay * 2);
+      } else if (giay >= 10 && giay <= 20) {
+        document.write("Tổng chi phí là: " + giay * 2.5);
+      } else if (giay > 20) {
+        document.write("Tổng chi phí là: " + giay * 3);
+      } else {
+        document.write("có dùng đâu mà tính");
+      }
+    </script>
+  </body>
+</html>

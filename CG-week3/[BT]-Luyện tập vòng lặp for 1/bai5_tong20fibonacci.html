@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i;
+      s = 0;
+      let fibonacci_array = [
+        0,
+        1,
+        1,
+        2,
+        3,
+        5,
+        8,
+        13,
+        21,
+        34,
+        55,
+        89,
+        144,
+        233,
+        377,
+        610,
+        987,
+        1597,
+        2584,
+        4181,
+      ];
+      for (i = 0; i < fibonacci_array.length; i++) {
+        s = s + fibonacci_array[i];
+      }
+      document.write(" Tổng 20 số fibonacci đầu tiên: " + s);
+    </script>
+  </body>
+</html>

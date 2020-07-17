@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Ax^2-bx+c=0
+      let a, b, c, x, x1, x2, xkep, delta;
+      a = Number(prompt("Nhập a"));
+      b = Number(prompt("Nhập b"));
+      c = Number(prompt("Nhập c"));
+      delta = Number(Math.pow(b, 2) - 4 * c * a);
+      if (a === 0) {
+        x = -c / b;
+        document.write("Nghiệm của phương trình là: x= " + x);
+      } else {
+        if (delta < 0) {
+          document.write("Phương trình vô nghiệm");
+        } else if (delta === 0) {
+          xkep = -b / (2 * a);
+          document.write("Phương trình có nghiệm kép x= :" + xkep);
+        } else {
+          x1 = (-b + Math.sqrt(delta)) / (2 * a);
+          x2 = (-b - Math.sqrt(delta)) / (2 * a);
+          document.write("phương trình có 2 nghiệm:" + x1 + " và " + x2);
+        }
+      }
+    </script>
+  </body>
+</html>

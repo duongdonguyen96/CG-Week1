@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i;
+
+      let array = [10, 4, 7, 6, 3, 7, 2, 7, 9, 3];
+      max = array[0];
+      let sum = 0;
+
+      for (i = 0; i < array.length; i++) {
+        if (max < array[i]) {
+          max = array[i];
+        }
+        sum = sum + array[i];
+      }
+      document.write("Số lớn nhất là:" + max);
+      document.write("<hr>");
+      document.write(
+        "trung bình của các giá trị trong mảng là" + sum / (i + 1)
+      );
+    </script>
+  </body>
+</html>

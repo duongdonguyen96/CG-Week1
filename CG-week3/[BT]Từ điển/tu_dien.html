@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" id="input1" height="500" width="auto" /><br />
+      <input type="button" value="tìm kiếm" onclick="getVietNam()" />
+    </form>
+    <hr />
+    <p>nghĩa tiếng việt:</p>
+    <p id="output"></p>
+    <script>
+      let array_english = [
+        "hello",
+        "city",
+        "computer",
+        "me",
+        "my friend",
+        "my sister",
+        "my teacher",
+      ];
+      let array_vietnam = [
+        "xin chào",
+        "thành phố",
+        "máy tính",
+        "tôi",
+        "là Nóc",
+        "Mẹ Bống",
+        "Cô  Uyên",
+      ];
+      function getVietNam() {
+        let engLish = document.getElementById("input1").value;
+        for (let i = 0; i < array_english.length; i++) {
+          if (engLish == array_english[i]) {
+            document.getElementById("output").innerHTML = array_vietnam[i];
+            break;
+          } else {
+            document.getElementById("output").innerHTML =
+              " Không hiểu, không hiểu, không hiểuuuuu";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

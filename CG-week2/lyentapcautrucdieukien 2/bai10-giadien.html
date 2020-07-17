@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // - Bậc 1 (từ 0 đến 50 kWh): 1.678 đồng/kWh
+
+      // - Bậc 2 (từ 51 đến 100 kWh):  1.734 đồng/kWh
+
+      // - Bậc 3 (từ 101 đến 200 kWh):  2.014 đồng/kWh
+
+      // - Bậc 4 (từ 201 đến 300 kWh): 2.536 đồng/kWh
+
+      // - Bậc 5 (từ 301 đến 400 kWh): 2.834 đồng/kWh
+
+      // - Bậc 6 (từ 401 kWh trở lên): 2.927 đồng/kWh
+      let kWh;
+      kWh = parseInt(prompt("Nhập số kWh "));
+      if (kWh <= 50) {
+        document.write(" số tiền phải trả: " + kWh * 1.678);
+      } else if (kWh > 50 && kWh <= 100) {
+        document.write("Số tiền phải trả: " + kWh * 1.734);
+      } else if (kWh > 100 && kWh <= 200) {
+        document.write("Số tiền phải trả: " + kWh * 2.014);
+      } else if (kWh > 200 && kWh <= 300) {
+        document.write(" Số tiền phải trả: " + kWh * 2.536);
+      } else if (kWh > 300 && kWh <= 400) {
+        document.write("Số tiền phải trả:" + kWh * 2.834);
+      } else {
+        document.write("Số tiền phải trả: " + kWh * 2.927);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array_a = prompt("nhập chuỗi a");
+      let array_b = prompt("nhập chuỗi b");
+      let i;
+      let j;
+      check = true;
+      for (i = 0; i < array_a.length; i++)
+        for (j = 0; j < array_b.length; j++)
+          if (array_a[i] != array_b[i]) {
+            check = false;
+          }
+
+      if (check) {
+        document.write("Hai chuỗi giống nhau");
+      } else {
+        document.write("Hai chuỗi khác nhau nhau");
+      }
+    </script>
+  </body>
+  <!-- </html>Bài 5: Viết một chương trình nhập vào 2 chuỗi, sau đó kiểm tra xem hai chuỗi có giống nhau hay không. -->
+</html>

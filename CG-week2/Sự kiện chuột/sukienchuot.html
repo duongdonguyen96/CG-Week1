@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="ball.png" alt="ball" height="100" width="auto" id="myimg" />
+    <h4>Click button below to move the image to right</h4>
+    <button type="button" onclick="moveLeft()">Left</button>
+    <button type="button" onclick="moveRight()">Right</button>
+  </body>
+  <script>
+    let imgball = "";
+
+    function init() {
+      imgball = document.getElementById("myimg");
+      imgball.style.position = "relative";
+      imgball.style.left = "0px";
+    }
+    function moveRight() {
+      imgball.style.left = parseInt(imgball.style.left) + 10 + "px";
+    }
+    function moveLeft() {
+      imgball.style.left = parseInt(imgball.style.left) - 10 + "px";
+    }
+    // khi windowload xong thì gọi hàn init
+    window.onload = init;
+
+    // cho 1 tấm ảnh vào - tạo nút và onclick ( tạo hàm)
+    // tạo 1 biến và gán id của ảnh vào biến đó
+    // tạo 1 funcion(init) - gán biến ảnh = id của ảnh
+    // imgball.style.position = "relative";
+    //   imgball.style.left = "0px";
+    // Gọi hàm onclick
+    // gán imgball.style.left = parseInt(imgball.style.left) + 10 + "px";
+    // nghĩa là 1 lần click sẽ sang phải 10 px
+  </script>
+</html>
